@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Arvestus_Erki_Ivar_Orm_Heinsoo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Arvestus_Erki_Ivar_Orm_Heinsoo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Grid.Row="1" Background="BlueViolet">
+            <TextBox Name="userBox" Margin="0,100,0,0" 
+                     PlaceholderText="Kasutajanimi"
+                     Background="White">
+
+            </TextBox>
+            <PasswordBox Name="passwordBox"
+                         PlaceholderText="parool"
+                         Background="White">
+            </PasswordBox>
+            <Button Name="button1" 
+                    Content="Logi sisse"
+                    Click="Button1_Click"
+                    IsEnabled="True" 
+                    HorizontalAlignment="Right"
+                    Margin="0,20,0,0"
+                    Background="White">
+
+
+            </Button>
+            <TextBlock Name="resultBlock" Foreground="Red" HorizontalAlignment="Right">
+
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

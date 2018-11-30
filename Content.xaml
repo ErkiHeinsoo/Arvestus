@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="Arvestus_Erki_Ivar_Orm_Heinsoo.Content"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Arvestus_Erki_Ivar_Orm_Heinsoo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Pivot>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                    <SymbolIcon Symbol="People">
+                    </SymbolIcon>
+                        <TextBlock FontSize="10">item1</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+            </PivotItem>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                    <SymbolIcon Symbol="Shop">
+                    </SymbolIcon>
+                        <TextBlock FontSize="10">item2</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock>Content 2</TextBlock>
+            </PivotItem>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                    <SymbolIcon Symbol="Zoom">
+                    </SymbolIcon>
+                        <TextBlock FontSize="10">item3</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock>Content 3</TextBlock>
+            </PivotItem>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel>
+                    <SymbolIcon Symbol="Attach">
+                    </SymbolIcon>
+                        <TextBlock FontSize="10">item4</TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock>Content 4</TextBlock>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
